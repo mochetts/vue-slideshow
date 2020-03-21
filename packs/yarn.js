@@ -1,4 +1,14 @@
 import Vue from 'vue'
+import SlideShow from '../components/SlideShow'
+import Slide from '../components/Slide'
 
-Vue.component('slim-slideshow', () => import('../components/SlideShow.vue'))
-Vue.component('slim-slide', () => import('../components/Slide.vue'))
+const Components = {
+  SlideShow,
+  Slide
+}
+
+Object.keys(Components).forEach((name) => {
+  Vue.component(name, Components[name])
+})
+
+export default Components
