@@ -7,10 +7,12 @@ export default {
   },
   computed: {
     slides() {
-      return this.$slots.default ? this.$slots.default.filter(
-        (vNode) =>
-          vNode.componentOptions && vNode.componentOptions.tag === 'Slide'
-      ) : []
+      return this.$slots.default
+        ? this.$slots.default.filter(
+            (vNode) =>
+              vNode.componentOptions && vNode.componentOptions.tag === 'Slide'
+          )
+        : []
     },
     currentSlide() {
       return this.slides[this.currentSlideIndex].componentInstance

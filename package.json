@@ -2,8 +2,15 @@
   "name": "@mochetts/vue-slideshow",
   "version": "1.0.0",
   "description": "A clean and easy slideshow component made with Vue.js",
-  "author": "Martin Mochetti",
+  "author": {
+    "name": "Martin Mochetti",
+    "email": "martin.mochetti@gmail.com",
+    "url": "http://mochetts.com"
+  },
   "main": "./dist/vue-slideshow.common.js",
+  "license": "MIT",
+  "keywords": ["vue", "slideshow", "slide", "slim"],
+  "repository": { "type": "git", "url": "https://github.com/mochetts/vue-slideshow.git" },
   "files": [
     "dist/*",
     "components/*",
