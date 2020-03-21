@@ -1,0 +1,55 @@
+{
+  "name": "@mochetts/vue-slideshow",
+  "version": "1.0.0",
+  "description": "A clean and easy slideshow component made with Vue.js",
+  "author": "Martin Mochetti",
+  "main": "./dist/vue-slideshow.common.js",
+  "files": [
+    "dist/*",
+    "components/*",
+    "*.json",
+    "*.js"
+  ],
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "vue build --target lib --name vue-slideshow ./packs/yarn.js",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "test": "jest",
+    "distribute": "yarn publish --access public"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "yarn lint",
+    "*.{css,vue}": "stylelint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/stylelint-module": "^3.1.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "animate.css": "^3.7.2",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.0.0",
+    "jest": "^24.1.0",
+    "lint-staged": "^10.0.0",
+    "node-sass": "^4.13.1",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
+    "stylelint": "^10.1.0",
+    "vue-jest": "^4.0.0-0"
+  }
+}
