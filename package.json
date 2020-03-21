@@ -1,6 +1,6 @@
 {
   "name": "@mochetts/vue-slideshow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A clean and easy slideshow component made with Vue.js",
   "author": {
     "name": "Martin Mochetti",
@@ -9,8 +9,16 @@
   },
   "main": "./dist/vue-slideshow.common.js",
   "license": "MIT",
-  "keywords": ["vue", "slideshow", "slide", "slim"],
-  "repository": { "type": "git", "url": "https://github.com/mochetts/vue-slideshow.git" },
+  "keywords": [
+    "vue",
+    "slideshow",
+    "slide",
+    "slim"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mochetts/vue-slideshow.git"
+  },
   "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags",
   "files": [
     "dist/*",
