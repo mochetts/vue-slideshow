@@ -68,7 +68,7 @@ export default {
       @after-enter="entered"
       @after-leave="left"
     >
-      <div v-show="entering && !leaving" class="content flex">
+      <div v-show="entering && !leaving" class="content">
         <slot />
       </div>
     </transition>
