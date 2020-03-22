@@ -17,6 +17,12 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   /*
+   ** Generation of demo sources
+   */
+  generate: {
+    dir: 'demo',
+  },
+  /*
    ** Customize the progress-bar color
    */
   loading: { color: '#fff' },

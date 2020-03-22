@@ -29,7 +29,7 @@ export default {
       leave-with="animated fadeOut"
       :duration="1"
     >
-      <h1>I'm vue-slideshow!</h1>
+      <h1>I'm a vue-slideshow!</h1>
     </Slide>
     <Slide
       enter-with="animated fadeIn slow"
