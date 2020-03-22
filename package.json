@@ -33,11 +33,8 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest",
-    "link_demo": "git subtree add --prefix=demo git@github.com:mochetts/vue-slideshow.github.io.git master --squash",
-    "prepare_demo": "nuxt build && git add . && git commit -m 'Demo Deploy' && git push",
-    "deploy_demo": "yarn prepare_demo && git subtree push --prefix=demo git@github.com:mochetts/vue-slideshow.github.io.git master",
     "stage": "vue build --target lib --name vue-slideshow ./packs/yarn.js",
-    "release": "yarn stage && yarn publish --access public"
+    "release": "yarn stage && yarn publish --access public",
   },
   "lint-staged": {
     "*.{js,vue}": "yarn lint",

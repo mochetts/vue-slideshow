@@ -52,14 +52,9 @@ import '@mochetts/vue-slideshow'
 
 ```vue
 <script>
-import SlideShow from '@mochetts/vue-slideshow/components/SlideShow'
-import Slide from '@mochetts/vue-slideshow/components/Slide'
+import '@mochetts/vue-slideshow'
 
 export default {
-  components: {
-    SlideShow,
-    Slide
-  },
   methods: {
     slideShowEnded() {
       console.log('The end')
