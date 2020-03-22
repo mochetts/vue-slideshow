@@ -81,7 +81,7 @@ export default {
       @entered="slideEntered"
       :duration="1"
     >
-      <h1>I'm vue-slideshow!</h1>
+      <h1>I'm a vue-slideshow!</h1>
     </Slide>
     <Slide
       enter-with="animated fadeIn slow"
@@ -93,6 +93,7 @@ export default {
   </SlideShow>
 </template>
 ```
+Check out a demo [here](https://mochetts.com/vue-slideshow/).
 
 ## Contributing
 This package was developed using `Nuxt.js`.
