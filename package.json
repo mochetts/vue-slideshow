@@ -34,7 +34,7 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest",
     "stage": "vue build --target lib --name vue-slideshow ./packs/yarn.js",
-    "release": "yarn stage && yarn publish --access public",
+    "release": "yarn stage && yarn publish --access public"
   },
   "lint-staged": {
     "*.{js,vue}": "yarn lint",
