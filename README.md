@@ -93,7 +93,7 @@ export default {
   </SlideShow>
 </template>
 ```
-Check out a demo [here](https://mochetts.com/vue-slideshow/).
+Check out a demo [here](https://mochetts.vercel.app/vue-slideshow/).
 
 ## Contributing
 This package was developed using `Nuxt.js`.
